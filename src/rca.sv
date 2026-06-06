@@ -1,4 +1,3 @@
-`include "full_adder.sv"
 
 module adder#(parameter WIDTH=8)(
   input logic [WIDTH-1:0] srca,
