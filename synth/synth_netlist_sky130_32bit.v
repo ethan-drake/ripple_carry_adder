@@ -29,422 +29,1068 @@ module adder(srca, srcb, cin, is_signed, result, cout, zero_f, ov_f);
   (* src = "convert_to_v/rca.v:19.14-19.18" *)
   output ov_f;
   wire ov_f;
-  wire _00_;
-  wire _01_;
-  wire _02_;
-  wire _03_;
-  wire _04_;
-  wire _05_;
-  wire _06_;
-  wire _07_;
-  wire _08_;
-  wire _09_;
-  wire _10_;
-  (* src = "convert_to_v/rca.v:20.17-20.18" *)
-  wire [32:0] c;
-  sky130_fd_sc_hd__nor4_1 _11_ (
-    .A(result[8]),
-    .B(result[14]),
-    .C(result[2]),
-    .D(result[4]),
-    .Y(_00_)
+  wire _000_;
+  wire _001_;
+  wire _002_;
+  wire _003_;
+  wire _004_;
+  wire _005_;
+  wire _006_;
+  wire _007_;
+  wire _008_;
+  wire _009_;
+  wire _010_;
+  wire _011_;
+  wire _012_;
+  wire _013_;
+  wire _014_;
+  wire _015_;
+  wire _016_;
+  wire _017_;
+  wire _018_;
+  wire _019_;
+  wire _020_;
+  wire _021_;
+  wire _022_;
+  wire _023_;
+  wire _024_;
+  wire _025_;
+  wire _026_;
+  wire _027_;
+  wire _028_;
+  wire _029_;
+  wire _030_;
+  wire _031_;
+  wire _032_;
+  wire _033_;
+  wire _034_;
+  wire _035_;
+  wire _036_;
+  wire _037_;
+  wire _038_;
+  wire _039_;
+  wire _040_;
+  wire _041_;
+  wire _042_;
+  wire _043_;
+  wire _044_;
+  wire _045_;
+  wire _046_;
+  wire _047_;
+  wire _048_;
+  wire _049_;
+  wire _050_;
+  wire _051_;
+  wire _052_;
+  wire _053_;
+  wire _054_;
+  wire _055_;
+  wire _056_;
+  wire _057_;
+  wire _058_;
+  wire _059_;
+  wire _060_;
+  wire _061_;
+  wire _062_;
+  wire _063_;
+  wire _064_;
+  wire _065_;
+  wire _066_;
+  wire _067_;
+  wire _068_;
+  wire _069_;
+  wire _070_;
+  wire _071_;
+  wire _072_;
+  wire _073_;
+  wire _074_;
+  wire _075_;
+  wire _076_;
+  wire _077_;
+  wire _078_;
+  wire _079_;
+  wire _080_;
+  wire _081_;
+  wire _082_;
+  wire _083_;
+  wire _084_;
+  wire _085_;
+  wire _086_;
+  wire _087_;
+  wire _088_;
+  wire _089_;
+  wire _090_;
+  wire _091_;
+  wire _092_;
+  wire _093_;
+  wire _094_;
+  wire _095_;
+  wire _096_;
+  wire _097_;
+  wire _098_;
+  wire _099_;
+  wire _100_;
+  wire _101_;
+  wire _102_;
+  wire _103_;
+  wire _104_;
+  wire _105_;
+  wire _106_;
+  wire _107_;
+  (* hdlname = "full_adders[0].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[0].adder.result ;
+  (* hdlname = "full_adders[10].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[10].adder.result ;
+  (* hdlname = "full_adders[11].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[11].adder.result ;
+  (* hdlname = "full_adders[12].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[12].adder.result ;
+  (* hdlname = "full_adders[13].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[13].adder.result ;
+  (* hdlname = "full_adders[14].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[14].adder.result ;
+  (* hdlname = "full_adders[15].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[15].adder.result ;
+  (* hdlname = "full_adders[16].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[16].adder.result ;
+  (* hdlname = "full_adders[17].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[17].adder.result ;
+  (* hdlname = "full_adders[18].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[18].adder.result ;
+  (* hdlname = "full_adders[19].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[19].adder.result ;
+  (* hdlname = "full_adders[1].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[1].adder.result ;
+  (* hdlname = "full_adders[20].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[20].adder.result ;
+  (* hdlname = "full_adders[21].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[21].adder.result ;
+  (* hdlname = "full_adders[22].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[22].adder.result ;
+  (* hdlname = "full_adders[23].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[23].adder.result ;
+  (* hdlname = "full_adders[24].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[24].adder.result ;
+  (* hdlname = "full_adders[25].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[25].adder.result ;
+  (* hdlname = "full_adders[26].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[26].adder.result ;
+  (* hdlname = "full_adders[27].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[27].adder.result ;
+  (* hdlname = "full_adders[28].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[28].adder.result ;
+  (* hdlname = "full_adders[29].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[29].adder.result ;
+  (* hdlname = "full_adders[2].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[2].adder.result ;
+  (* hdlname = "full_adders[30].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[30].adder.result ;
+  (* hdlname = "full_adders[31].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[31].adder.result ;
+  (* hdlname = "full_adders[3].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[3].adder.result ;
+  (* hdlname = "full_adders[4].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[4].adder.result ;
+  (* hdlname = "full_adders[5].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[5].adder.result ;
+  (* hdlname = "full_adders[6].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[6].adder.result ;
+  (* hdlname = "full_adders[7].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[7].adder.result ;
+  (* hdlname = "full_adders[8].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[8].adder.result ;
+  (* hdlname = "full_adders[9].adder result" *)
+  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
+  wire \full_adders[9].adder.result ;
+  sky130_fd_sc_hd__maj3_1 _108_ (
+    .A(srca[0]),
+    .B(cin),
+    .C(srcb[0]),
+    .X(_000_)
   );
-  sky130_fd_sc_hd__nor4_1 _12_ (
-    .A(result[26]),
-    .B(result[28]),
-    .C(result[16]),
-    .D(result[22]),
-    .Y(_01_)
+  sky130_fd_sc_hd__maj3_1 _109_ (
+    .A(srca[1]),
+    .B(srcb[1]),
+    .C(_000_),
+    .X(_001_)
   );
-  sky130_fd_sc_hd__nor4_1 _13_ (
-    .A(result[10]),
-    .B(result[12]),
-    .C(result[0]),
-    .D(result[6]),
-    .Y(_02_)
+  sky130_fd_sc_hd__maj3_1 _110_ (
+    .A(srca[2]),
+    .B(srcb[2]),
+    .C(_001_),
+    .X(_002_)
   );
-  sky130_fd_sc_hd__nor4_1 _14_ (
-    .A(result[24]),
-    .B(result[30]),
-    .C(result[23]),
-    .D(result[17]),
-    .Y(_03_)
+  sky130_fd_sc_hd__maj3_1 _111_ (
+    .A(srca[3]),
+    .B(srcb[3]),
+    .C(_002_),
+    .X(_003_)
   );
-  sky130_fd_sc_hd__nand4_1 _15_ (
-    .A(_00_),
-    .B(_01_),
-    .C(_02_),
-    .D(_03_),
-    .Y(_04_)
+  sky130_fd_sc_hd__maj3_1 _112_ (
+    .A(srca[4]),
+    .B(srcb[4]),
+    .C(_003_),
+    .X(_004_)
   );
-  sky130_fd_sc_hd__nor4_1 _16_ (
-    .A(result[11]),
-    .B(result[13]),
-    .C(result[1]),
-    .D(result[7]),
-    .Y(_05_)
+  sky130_fd_sc_hd__maj3_1 _113_ (
+    .A(srca[5]),
+    .B(srcb[5]),
+    .C(_004_),
+    .X(_005_)
   );
-  sky130_fd_sc_hd__nor4_1 _17_ (
-    .A(result[25]),
-    .B(result[31]),
-    .C(result[19]),
-    .D(result[21]),
-    .Y(_06_)
+  sky130_fd_sc_hd__maj3_1 _114_ (
+    .A(srca[6]),
+    .B(srcb[6]),
+    .C(_005_),
+    .X(_006_)
   );
-  sky130_fd_sc_hd__nor4_1 _18_ (
-    .A(result[9]),
-    .B(result[15]),
-    .C(result[3]),
-    .D(result[5]),
-    .Y(_07_)
+  sky130_fd_sc_hd__maj3_1 _115_ (
+    .A(srca[7]),
+    .B(srcb[7]),
+    .C(_006_),
+    .X(_007_)
   );
-  sky130_fd_sc_hd__nor4_1 _19_ (
-    .A(result[27]),
-    .B(result[29]),
-    .C(result[20]),
-    .D(result[18]),
-    .Y(_08_)
+  sky130_fd_sc_hd__maj3_1 _116_ (
+    .A(srcb[8]),
+    .B(srca[8]),
+    .C(_007_),
+    .X(_008_)
   );
-  sky130_fd_sc_hd__nand4_1 _20_ (
-    .A(_05_),
-    .B(_06_),
-    .C(_07_),
-    .D(_08_),
-    .Y(_09_)
+  sky130_fd_sc_hd__maj3_1 _117_ (
+    .A(srcb[9]),
+    .B(srca[9]),
+    .C(_008_),
+    .X(_009_)
   );
-  sky130_fd_sc_hd__nor2_1 _21_ (
-    .A(_04_),
-    .B(_09_),
+  sky130_fd_sc_hd__maj3_1 _118_ (
+    .A(srcb[10]),
+    .B(srca[10]),
+    .C(_009_),
+    .X(_010_)
+  );
+  sky130_fd_sc_hd__maj3_1 _119_ (
+    .A(srcb[11]),
+    .B(srca[11]),
+    .C(_010_),
+    .X(_011_)
+  );
+  sky130_fd_sc_hd__maj3_1 _120_ (
+    .A(srcb[12]),
+    .B(srca[12]),
+    .C(_011_),
+    .X(_012_)
+  );
+  sky130_fd_sc_hd__maj3_1 _121_ (
+    .A(srcb[13]),
+    .B(srca[13]),
+    .C(_012_),
+    .X(_013_)
+  );
+  sky130_fd_sc_hd__maj3_1 _122_ (
+    .A(srcb[14]),
+    .B(srca[14]),
+    .C(_013_),
+    .X(_014_)
+  );
+  sky130_fd_sc_hd__maj3_1 _123_ (
+    .A(srcb[15]),
+    .B(srca[15]),
+    .C(_014_),
+    .X(_015_)
+  );
+  sky130_fd_sc_hd__maj3_1 _124_ (
+    .A(srcb[16]),
+    .B(srca[16]),
+    .C(_015_),
+    .X(_016_)
+  );
+  sky130_fd_sc_hd__maj3_1 _125_ (
+    .A(srcb[17]),
+    .B(srca[17]),
+    .C(_016_),
+    .X(_017_)
+  );
+  sky130_fd_sc_hd__maj3_1 _126_ (
+    .A(srcb[18]),
+    .B(srca[18]),
+    .C(_017_),
+    .X(_018_)
+  );
+  sky130_fd_sc_hd__maj3_1 _127_ (
+    .A(srcb[19]),
+    .B(srca[19]),
+    .C(_018_),
+    .X(_019_)
+  );
+  sky130_fd_sc_hd__maj3_1 _128_ (
+    .A(srcb[20]),
+    .B(srca[20]),
+    .C(_019_),
+    .X(_020_)
+  );
+  sky130_fd_sc_hd__maj3_1 _129_ (
+    .A(srcb[21]),
+    .B(srca[21]),
+    .C(_020_),
+    .X(_021_)
+  );
+  sky130_fd_sc_hd__maj3_1 _130_ (
+    .A(srcb[22]),
+    .B(srca[22]),
+    .C(_021_),
+    .X(_022_)
+  );
+  sky130_fd_sc_hd__maj3_1 _131_ (
+    .A(srcb[23]),
+    .B(srca[23]),
+    .C(_022_),
+    .X(_023_)
+  );
+  sky130_fd_sc_hd__maj3_1 _132_ (
+    .A(srcb[24]),
+    .B(srca[24]),
+    .C(_023_),
+    .X(_024_)
+  );
+  sky130_fd_sc_hd__maj3_1 _133_ (
+    .A(srcb[25]),
+    .B(srca[25]),
+    .C(_024_),
+    .X(_025_)
+  );
+  sky130_fd_sc_hd__maj3_1 _134_ (
+    .A(srcb[26]),
+    .B(srca[26]),
+    .C(_025_),
+    .X(_026_)
+  );
+  sky130_fd_sc_hd__maj3_1 _135_ (
+    .A(srcb[27]),
+    .B(srca[27]),
+    .C(_026_),
+    .X(_027_)
+  );
+  sky130_fd_sc_hd__maj3_1 _136_ (
+    .A(srcb[28]),
+    .B(srca[28]),
+    .C(_027_),
+    .X(_028_)
+  );
+  sky130_fd_sc_hd__maj3_1 _137_ (
+    .A(srcb[29]),
+    .B(srca[29]),
+    .C(_028_),
+    .X(_029_)
+  );
+  sky130_fd_sc_hd__nor3_1 _138_ (
+    .A(srcb[30]),
+    .B(srca[30]),
+    .C(_029_),
+    .Y(_030_)
+  );
+  sky130_fd_sc_hd__maj3_1 _139_ (
+    .A(srcb[30]),
+    .B(srca[30]),
+    .C(_029_),
+    .X(_031_)
+  );
+  sky130_fd_sc_hd__nand3_1 _140_ (
+    .A(srcb[30]),
+    .B(srca[30]),
+    .C(_029_),
+    .Y(_032_)
+  );
+  sky130_fd_sc_hd__o21ai_0 _141_ (
+    .A1(_030_),
+    .A2(_031_),
+    .B1(_032_),
+    .Y(\full_adders[30].adder.result )
+  );
+  sky130_fd_sc_hd__nand2_1 _142_ (
+    .A(srca[31]),
+    .B(srcb[31]),
+    .Y(_033_)
+  );
+  sky130_fd_sc_hd__lpflow_inputiso1p_1 _143_ (
+    .A(srca[31]),
+    .SLEEP(srcb[31]),
+    .X(_034_)
+  );
+  sky130_fd_sc_hd__nand2_1 _144_ (
+    .A(_033_),
+    .B(_034_),
+    .Y(_035_)
+  );
+  sky130_fd_sc_hd__nand2_1 _145_ (
+    .A(_031_),
+    .B(_034_),
+    .Y(_036_)
+  );
+  sky130_fd_sc_hd__xnor2_1 _146_ (
+    .A(_031_),
+    .B(_035_),
+    .Y(\full_adders[31].adder.result )
+  );
+  sky130_fd_sc_hd__nand3_1 _147_ (
+    .A(srcb[28]),
+    .B(srca[28]),
+    .C(_027_),
+    .Y(_037_)
+  );
+  sky130_fd_sc_hd__nor3_1 _148_ (
+    .A(srcb[28]),
+    .B(srca[28]),
+    .C(_027_),
+    .Y(_038_)
+  );
+  sky130_fd_sc_hd__o21ai_0 _149_ (
+    .A1(_028_),
+    .A2(_038_),
+    .B1(_037_),
+    .Y(\full_adders[28].adder.result )
+  );
+  sky130_fd_sc_hd__nand3_1 _150_ (
+    .A(srcb[29]),
+    .B(srca[29]),
+    .C(_028_),
+    .Y(_039_)
+  );
+  sky130_fd_sc_hd__nor3_1 _151_ (
+    .A(srcb[29]),
+    .B(srca[29]),
+    .C(_028_),
+    .Y(_040_)
+  );
+  sky130_fd_sc_hd__o21ai_0 _152_ (
+    .A1(_029_),
+    .A2(_040_),
+    .B1(_039_),
+    .Y(\full_adders[29].adder.result )
+  );
+  sky130_fd_sc_hd__nand3_1 _153_ (
+    .A(srcb[26]),
+    .B(srca[26]),
+    .C(_025_),
+    .Y(_041_)
+  );
+  sky130_fd_sc_hd__nor3_1 _154_ (
+    .A(srcb[26]),
+    .B(srca[26]),
+    .C(_025_),
+    .Y(_042_)
+  );
+  sky130_fd_sc_hd__o21ai_0 _155_ (
+    .A1(_026_),
+    .A2(_042_),
+    .B1(_041_),
+    .Y(\full_adders[26].adder.result )
+  );
+  sky130_fd_sc_hd__nand3_1 _156_ (
+    .A(srcb[27]),
+    .B(srca[27]),
+    .C(_026_),
+    .Y(_043_)
+  );
+  sky130_fd_sc_hd__nor3_1 _157_ (
+    .A(srcb[27]),
+    .B(srca[27]),
+    .C(_026_),
+    .Y(_044_)
+  );
+  sky130_fd_sc_hd__o21ai_0 _158_ (
+    .A1(_027_),
+    .A2(_044_),
+    .B1(_043_),
+    .Y(\full_adders[27].adder.result )
+  );
+  sky130_fd_sc_hd__nand3_1 _159_ (
+    .A(srcb[24]),
+    .B(srca[24]),
+    .C(_023_),
+    .Y(_045_)
+  );
+  sky130_fd_sc_hd__nor3_1 _160_ (
+    .A(srcb[24]),
+    .B(srca[24]),
+    .C(_023_),
+    .Y(_046_)
+  );
+  sky130_fd_sc_hd__o21ai_0 _161_ (
+    .A1(_024_),
+    .A2(_046_),
+    .B1(_045_),
+    .Y(\full_adders[24].adder.result )
+  );
+  sky130_fd_sc_hd__nand3_1 _162_ (
+    .A(srcb[25]),
+    .B(srca[25]),
+    .C(_024_),
+    .Y(_047_)
+  );
+  sky130_fd_sc_hd__nor3_1 _163_ (
+    .A(srcb[25]),
+    .B(srca[25]),
+    .C(_024_),
+    .Y(_048_)
+  );
+  sky130_fd_sc_hd__o21ai_0 _164_ (
+    .A1(_025_),
+    .A2(_048_),
+    .B1(_047_),
+    .Y(\full_adders[25].adder.result )
+  );
+  sky130_fd_sc_hd__nand3_1 _165_ (
+    .A(srcb[22]),
+    .B(srca[22]),
+    .C(_021_),
+    .Y(_049_)
+  );
+  sky130_fd_sc_hd__nor3_1 _166_ (
+    .A(srcb[22]),
+    .B(srca[22]),
+    .C(_021_),
+    .Y(_050_)
+  );
+  sky130_fd_sc_hd__o21ai_0 _167_ (
+    .A1(_022_),
+    .A2(_050_),
+    .B1(_049_),
+    .Y(\full_adders[22].adder.result )
+  );
+  sky130_fd_sc_hd__nand3_1 _168_ (
+    .A(srcb[23]),
+    .B(srca[23]),
+    .C(_022_),
+    .Y(_051_)
+  );
+  sky130_fd_sc_hd__nor3_1 _169_ (
+    .A(srcb[23]),
+    .B(srca[23]),
+    .C(_022_),
+    .Y(_052_)
+  );
+  sky130_fd_sc_hd__o21ai_0 _170_ (
+    .A1(_023_),
+    .A2(_052_),
+    .B1(_051_),
+    .Y(\full_adders[23].adder.result )
+  );
+  sky130_fd_sc_hd__nand3_1 _171_ (
+    .A(srcb[20]),
+    .B(srca[20]),
+    .C(_019_),
+    .Y(_053_)
+  );
+  sky130_fd_sc_hd__nor3_1 _172_ (
+    .A(srcb[20]),
+    .B(srca[20]),
+    .C(_019_),
+    .Y(_054_)
+  );
+  sky130_fd_sc_hd__o21ai_0 _173_ (
+    .A1(_020_),
+    .A2(_054_),
+    .B1(_053_),
+    .Y(\full_adders[20].adder.result )
+  );
+  sky130_fd_sc_hd__nand3_1 _174_ (
+    .A(srcb[21]),
+    .B(srca[21]),
+    .C(_020_),
+    .Y(_055_)
+  );
+  sky130_fd_sc_hd__nor3_1 _175_ (
+    .A(srcb[21]),
+    .B(srca[21]),
+    .C(_020_),
+    .Y(_056_)
+  );
+  sky130_fd_sc_hd__o21ai_0 _176_ (
+    .A1(_021_),
+    .A2(_056_),
+    .B1(_055_),
+    .Y(\full_adders[21].adder.result )
+  );
+  sky130_fd_sc_hd__nand3_1 _177_ (
+    .A(srcb[18]),
+    .B(srca[18]),
+    .C(_017_),
+    .Y(_057_)
+  );
+  sky130_fd_sc_hd__nor3_1 _178_ (
+    .A(srcb[18]),
+    .B(srca[18]),
+    .C(_017_),
+    .Y(_058_)
+  );
+  sky130_fd_sc_hd__o21ai_0 _179_ (
+    .A1(_018_),
+    .A2(_058_),
+    .B1(_057_),
+    .Y(\full_adders[18].adder.result )
+  );
+  sky130_fd_sc_hd__nand3_1 _180_ (
+    .A(srcb[19]),
+    .B(srca[19]),
+    .C(_018_),
+    .Y(_059_)
+  );
+  sky130_fd_sc_hd__nor3_1 _181_ (
+    .A(srcb[19]),
+    .B(srca[19]),
+    .C(_018_),
+    .Y(_060_)
+  );
+  sky130_fd_sc_hd__o21ai_0 _182_ (
+    .A1(_019_),
+    .A2(_060_),
+    .B1(_059_),
+    .Y(\full_adders[19].adder.result )
+  );
+  sky130_fd_sc_hd__nand3_1 _183_ (
+    .A(srcb[16]),
+    .B(srca[16]),
+    .C(_015_),
+    .Y(_061_)
+  );
+  sky130_fd_sc_hd__nor3_1 _184_ (
+    .A(srcb[16]),
+    .B(srca[16]),
+    .C(_015_),
+    .Y(_062_)
+  );
+  sky130_fd_sc_hd__o21ai_0 _185_ (
+    .A1(_016_),
+    .A2(_062_),
+    .B1(_061_),
+    .Y(\full_adders[16].adder.result )
+  );
+  sky130_fd_sc_hd__nand3_1 _186_ (
+    .A(srcb[17]),
+    .B(srca[17]),
+    .C(_016_),
+    .Y(_063_)
+  );
+  sky130_fd_sc_hd__nor3_1 _187_ (
+    .A(srcb[17]),
+    .B(srca[17]),
+    .C(_016_),
+    .Y(_064_)
+  );
+  sky130_fd_sc_hd__o21ai_0 _188_ (
+    .A1(_017_),
+    .A2(_064_),
+    .B1(_063_),
+    .Y(\full_adders[17].adder.result )
+  );
+  sky130_fd_sc_hd__nand3_1 _189_ (
+    .A(srcb[14]),
+    .B(srca[14]),
+    .C(_013_),
+    .Y(_065_)
+  );
+  sky130_fd_sc_hd__nor3_1 _190_ (
+    .A(srcb[14]),
+    .B(srca[14]),
+    .C(_013_),
+    .Y(_066_)
+  );
+  sky130_fd_sc_hd__o21ai_0 _191_ (
+    .A1(_014_),
+    .A2(_066_),
+    .B1(_065_),
+    .Y(\full_adders[14].adder.result )
+  );
+  sky130_fd_sc_hd__nand3_1 _192_ (
+    .A(srcb[15]),
+    .B(srca[15]),
+    .C(_014_),
+    .Y(_067_)
+  );
+  sky130_fd_sc_hd__nor3_1 _193_ (
+    .A(srcb[15]),
+    .B(srca[15]),
+    .C(_014_),
+    .Y(_068_)
+  );
+  sky130_fd_sc_hd__o21ai_0 _194_ (
+    .A1(_015_),
+    .A2(_068_),
+    .B1(_067_),
+    .Y(\full_adders[15].adder.result )
+  );
+  sky130_fd_sc_hd__nand3_1 _195_ (
+    .A(srcb[12]),
+    .B(srca[12]),
+    .C(_011_),
+    .Y(_069_)
+  );
+  sky130_fd_sc_hd__nor3_1 _196_ (
+    .A(srcb[12]),
+    .B(srca[12]),
+    .C(_011_),
+    .Y(_070_)
+  );
+  sky130_fd_sc_hd__o21ai_0 _197_ (
+    .A1(_012_),
+    .A2(_070_),
+    .B1(_069_),
+    .Y(\full_adders[12].adder.result )
+  );
+  sky130_fd_sc_hd__nand3_1 _198_ (
+    .A(srcb[13]),
+    .B(srca[13]),
+    .C(_012_),
+    .Y(_071_)
+  );
+  sky130_fd_sc_hd__nor3_1 _199_ (
+    .A(srcb[13]),
+    .B(srca[13]),
+    .C(_012_),
+    .Y(_072_)
+  );
+  sky130_fd_sc_hd__o21ai_0 _200_ (
+    .A1(_013_),
+    .A2(_072_),
+    .B1(_071_),
+    .Y(\full_adders[13].adder.result )
+  );
+  sky130_fd_sc_hd__nand3_1 _201_ (
+    .A(srcb[10]),
+    .B(srca[10]),
+    .C(_009_),
+    .Y(_073_)
+  );
+  sky130_fd_sc_hd__nor3_1 _202_ (
+    .A(srcb[10]),
+    .B(srca[10]),
+    .C(_009_),
+    .Y(_074_)
+  );
+  sky130_fd_sc_hd__o21ai_0 _203_ (
+    .A1(_010_),
+    .A2(_074_),
+    .B1(_073_),
+    .Y(\full_adders[10].adder.result )
+  );
+  sky130_fd_sc_hd__nand3_1 _204_ (
+    .A(srcb[11]),
+    .B(srca[11]),
+    .C(_010_),
+    .Y(_075_)
+  );
+  sky130_fd_sc_hd__nor3_1 _205_ (
+    .A(srcb[11]),
+    .B(srca[11]),
+    .C(_010_),
+    .Y(_076_)
+  );
+  sky130_fd_sc_hd__o21ai_0 _206_ (
+    .A1(_011_),
+    .A2(_076_),
+    .B1(_075_),
+    .Y(\full_adders[11].adder.result )
+  );
+  sky130_fd_sc_hd__nand3_1 _207_ (
+    .A(srcb[8]),
+    .B(srca[8]),
+    .C(_007_),
+    .Y(_077_)
+  );
+  sky130_fd_sc_hd__nor3_1 _208_ (
+    .A(srcb[8]),
+    .B(srca[8]),
+    .C(_007_),
+    .Y(_078_)
+  );
+  sky130_fd_sc_hd__o21ai_0 _209_ (
+    .A1(_008_),
+    .A2(_078_),
+    .B1(_077_),
+    .Y(\full_adders[8].adder.result )
+  );
+  sky130_fd_sc_hd__nand3_1 _210_ (
+    .A(srcb[9]),
+    .B(srca[9]),
+    .C(_008_),
+    .Y(_079_)
+  );
+  sky130_fd_sc_hd__nor3_1 _211_ (
+    .A(srcb[9]),
+    .B(srca[9]),
+    .C(_008_),
+    .Y(_080_)
+  );
+  sky130_fd_sc_hd__o21ai_0 _212_ (
+    .A1(_009_),
+    .A2(_080_),
+    .B1(_079_),
+    .Y(\full_adders[9].adder.result )
+  );
+  sky130_fd_sc_hd__nand3_1 _213_ (
+    .A(srca[6]),
+    .B(srcb[6]),
+    .C(_005_),
+    .Y(_081_)
+  );
+  sky130_fd_sc_hd__nor3_1 _214_ (
+    .A(srca[6]),
+    .B(srcb[6]),
+    .C(_005_),
+    .Y(_082_)
+  );
+  sky130_fd_sc_hd__o21ai_0 _215_ (
+    .A1(_006_),
+    .A2(_082_),
+    .B1(_081_),
+    .Y(\full_adders[6].adder.result )
+  );
+  sky130_fd_sc_hd__nand3_1 _216_ (
+    .A(srca[7]),
+    .B(srcb[7]),
+    .C(_006_),
+    .Y(_083_)
+  );
+  sky130_fd_sc_hd__nor3_1 _217_ (
+    .A(srca[7]),
+    .B(srcb[7]),
+    .C(_006_),
+    .Y(_084_)
+  );
+  sky130_fd_sc_hd__o21ai_0 _218_ (
+    .A1(_007_),
+    .A2(_084_),
+    .B1(_083_),
+    .Y(\full_adders[7].adder.result )
+  );
+  sky130_fd_sc_hd__nor3_1 _219_ (
+    .A(srca[4]),
+    .B(srcb[4]),
+    .C(_003_),
+    .Y(_085_)
+  );
+  sky130_fd_sc_hd__nand3_1 _220_ (
+    .A(srca[4]),
+    .B(srcb[4]),
+    .C(_003_),
+    .Y(_086_)
+  );
+  sky130_fd_sc_hd__a21oi_1 _221_ (
+    .A1(_004_),
+    .A2(_086_),
+    .B1(_085_),
+    .Y(\full_adders[4].adder.result )
+  );
+  sky130_fd_sc_hd__xnor2_1 _222_ (
+    .A(srcb[5]),
+    .B(_004_),
+    .Y(_087_)
+  );
+  sky130_fd_sc_hd__xnor2_1 _223_ (
+    .A(srca[5]),
+    .B(_087_),
+    .Y(\full_adders[5].adder.result )
+  );
+  sky130_fd_sc_hd__nor3_1 _224_ (
+    .A(srca[2]),
+    .B(srcb[2]),
+    .C(_001_),
+    .Y(_088_)
+  );
+  sky130_fd_sc_hd__nand3_1 _225_ (
+    .A(srca[2]),
+    .B(srcb[2]),
+    .C(_001_),
+    .Y(_089_)
+  );
+  sky130_fd_sc_hd__a21oi_1 _226_ (
+    .A1(_002_),
+    .A2(_089_),
+    .B1(_088_),
+    .Y(\full_adders[2].adder.result )
+  );
+  sky130_fd_sc_hd__nand3_1 _227_ (
+    .A(srca[3]),
+    .B(srcb[3]),
+    .C(_002_),
+    .Y(_090_)
+  );
+  sky130_fd_sc_hd__nor3_1 _228_ (
+    .A(srca[3]),
+    .B(srcb[3]),
+    .C(_002_),
+    .Y(_091_)
+  );
+  sky130_fd_sc_hd__o21ai_0 _229_ (
+    .A1(_003_),
+    .A2(_091_),
+    .B1(_090_),
+    .Y(\full_adders[3].adder.result )
+  );
+  sky130_fd_sc_hd__nor3_1 _230_ (
+    .A(srca[0]),
+    .B(cin),
+    .C(srcb[0]),
+    .Y(_092_)
+  );
+  sky130_fd_sc_hd__nand3_1 _231_ (
+    .A(srca[0]),
+    .B(cin),
+    .C(srcb[0]),
+    .Y(_093_)
+  );
+  sky130_fd_sc_hd__o21ai_0 _232_ (
+    .A1(_000_),
+    .A2(_092_),
+    .B1(_093_),
+    .Y(\full_adders[0].adder.result )
+  );
+  sky130_fd_sc_hd__nand3_1 _233_ (
+    .A(srca[1]),
+    .B(srcb[1]),
+    .C(_000_),
+    .Y(_094_)
+  );
+  sky130_fd_sc_hd__nor3_1 _234_ (
+    .A(srca[1]),
+    .B(srcb[1]),
+    .C(_000_),
+    .Y(_095_)
+  );
+  sky130_fd_sc_hd__o21ai_0 _235_ (
+    .A1(_001_),
+    .A2(_095_),
+    .B1(_094_),
+    .Y(\full_adders[1].adder.result )
+  );
+  sky130_fd_sc_hd__nand2_1 _236_ (
+    .A(_033_),
+    .B(_036_),
+    .Y(cout)
+  );
+  sky130_fd_sc_hd__or4_1 _237_ (
+    .A(\full_adders[2].adder.result ),
+    .B(\full_adders[3].adder.result ),
+    .C(\full_adders[0].adder.result ),
+    .D(\full_adders[1].adder.result ),
+    .X(_096_)
+  );
+  sky130_fd_sc_hd__or4_1 _238_ (
+    .A(\full_adders[6].adder.result ),
+    .B(\full_adders[4].adder.result ),
+    .C(\full_adders[5].adder.result ),
+    .D(_096_),
+    .X(_097_)
+  );
+  sky130_fd_sc_hd__or4_1 _239_ (
+    .A(\full_adders[8].adder.result ),
+    .B(\full_adders[9].adder.result ),
+    .C(\full_adders[7].adder.result ),
+    .D(_097_),
+    .X(_098_)
+  );
+  sky130_fd_sc_hd__or4_1 _240_ (
+    .A(\full_adders[12].adder.result ),
+    .B(\full_adders[10].adder.result ),
+    .C(\full_adders[11].adder.result ),
+    .D(_098_),
+    .X(_099_)
+  );
+  sky130_fd_sc_hd__or3_1 _241_ (
+    .A(\full_adders[15].adder.result ),
+    .B(\full_adders[13].adder.result ),
+    .C(_099_),
+    .X(_100_)
+  );
+  sky130_fd_sc_hd__nor4_1 _242_ (
+    .A(\full_adders[16].adder.result ),
+    .B(\full_adders[17].adder.result ),
+    .C(\full_adders[14].adder.result ),
+    .D(_100_),
+    .Y(_101_)
+  );
+  sky130_fd_sc_hd__or4b_1 _243_ (
+    .A(\full_adders[20].adder.result ),
+    .B(\full_adders[18].adder.result ),
+    .C(\full_adders[19].adder.result ),
+    .D_N(_101_),
+    .X(_102_)
+  );
+  sky130_fd_sc_hd__nor4_1 _244_ (
+    .A(\full_adders[22].adder.result ),
+    .B(\full_adders[23].adder.result ),
+    .C(\full_adders[21].adder.result ),
+    .D(_102_),
+    .Y(_103_)
+  );
+  sky130_fd_sc_hd__nor3b_1 _245_ (
+    .A(\full_adders[24].adder.result ),
+    .B(\full_adders[25].adder.result ),
+    .C_N(_103_),
+    .Y(_104_)
+  );
+  sky130_fd_sc_hd__or4b_1 _246_ (
+    .A(\full_adders[28].adder.result ),
+    .B(\full_adders[26].adder.result ),
+    .C(\full_adders[27].adder.result ),
+    .D_N(_104_),
+    .X(_105_)
+  );
+  sky130_fd_sc_hd__nor4_1 _247_ (
+    .A(\full_adders[30].adder.result ),
+    .B(\full_adders[31].adder.result ),
+    .C(\full_adders[29].adder.result ),
+    .D(_105_),
     .Y(zero_f)
   );
-  sky130_fd_sc_hd__nand2_1 _22_ (
-    .A(c[31]),
-    .B(is_signed),
-    .Y(_10_)
+  sky130_fd_sc_hd__nand2_1 _248_ (
+    .A(is_signed),
+    .B(_031_),
+    .Y(_106_)
   );
-  sky130_fd_sc_hd__xnor2_1 _23_ (
-    .A(cout),
-    .B(_10_),
+  sky130_fd_sc_hd__and3_1 _249_ (
+    .A(is_signed),
+    .B(_031_),
+    .C(_034_),
+    .X(_107_)
+  );
+  sky130_fd_sc_hd__a31oi_1 _250_ (
+    .A1(_033_),
+    .A2(_036_),
+    .A3(_106_),
+    .B1(_107_),
     .Y(ov_f)
   );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[0].adder  (
-    .a(srca[0]),
-    .b(srcb[0]),
-    .cin(cin),
-    .cout(c[1]),
-    .result(result[0])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[10].adder  (
-    .a(srca[10]),
-    .b(srcb[10]),
-    .cin(c[10]),
-    .cout(c[11]),
-    .result(result[10])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[11].adder  (
-    .a(srca[11]),
-    .b(srcb[11]),
-    .cin(c[11]),
-    .cout(c[12]),
-    .result(result[11])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[12].adder  (
-    .a(srca[12]),
-    .b(srcb[12]),
-    .cin(c[12]),
-    .cout(c[13]),
-    .result(result[12])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[13].adder  (
-    .a(srca[13]),
-    .b(srcb[13]),
-    .cin(c[13]),
-    .cout(c[14]),
-    .result(result[13])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[14].adder  (
-    .a(srca[14]),
-    .b(srcb[14]),
-    .cin(c[14]),
-    .cout(c[15]),
-    .result(result[14])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[15].adder  (
-    .a(srca[15]),
-    .b(srcb[15]),
-    .cin(c[15]),
-    .cout(c[16]),
-    .result(result[15])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[16].adder  (
-    .a(srca[16]),
-    .b(srcb[16]),
-    .cin(c[16]),
-    .cout(c[17]),
-    .result(result[16])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[17].adder  (
-    .a(srca[17]),
-    .b(srcb[17]),
-    .cin(c[17]),
-    .cout(c[18]),
-    .result(result[17])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[18].adder  (
-    .a(srca[18]),
-    .b(srcb[18]),
-    .cin(c[18]),
-    .cout(c[19]),
-    .result(result[18])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[19].adder  (
-    .a(srca[19]),
-    .b(srcb[19]),
-    .cin(c[19]),
-    .cout(c[20]),
-    .result(result[19])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[1].adder  (
-    .a(srca[1]),
-    .b(srcb[1]),
-    .cin(c[1]),
-    .cout(c[2]),
-    .result(result[1])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[20].adder  (
-    .a(srca[20]),
-    .b(srcb[20]),
-    .cin(c[20]),
-    .cout(c[21]),
-    .result(result[20])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[21].adder  (
-    .a(srca[21]),
-    .b(srcb[21]),
-    .cin(c[21]),
-    .cout(c[22]),
-    .result(result[21])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[22].adder  (
-    .a(srca[22]),
-    .b(srcb[22]),
-    .cin(c[22]),
-    .cout(c[23]),
-    .result(result[22])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[23].adder  (
-    .a(srca[23]),
-    .b(srcb[23]),
-    .cin(c[23]),
-    .cout(c[24]),
-    .result(result[23])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[24].adder  (
-    .a(srca[24]),
-    .b(srcb[24]),
-    .cin(c[24]),
-    .cout(c[25]),
-    .result(result[24])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[25].adder  (
-    .a(srca[25]),
-    .b(srcb[25]),
-    .cin(c[25]),
-    .cout(c[26]),
-    .result(result[25])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[26].adder  (
-    .a(srca[26]),
-    .b(srcb[26]),
-    .cin(c[26]),
-    .cout(c[27]),
-    .result(result[26])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[27].adder  (
-    .a(srca[27]),
-    .b(srcb[27]),
-    .cin(c[27]),
-    .cout(c[28]),
-    .result(result[27])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[28].adder  (
-    .a(srca[28]),
-    .b(srcb[28]),
-    .cin(c[28]),
-    .cout(c[29]),
-    .result(result[28])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[29].adder  (
-    .a(srca[29]),
-    .b(srcb[29]),
-    .cin(c[29]),
-    .cout(c[30]),
-    .result(result[29])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[2].adder  (
-    .a(srca[2]),
-    .b(srcb[2]),
-    .cin(c[2]),
-    .cout(c[3]),
-    .result(result[2])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[30].adder  (
-    .a(srca[30]),
-    .b(srcb[30]),
-    .cin(c[30]),
-    .cout(c[31]),
-    .result(result[30])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[31].adder  (
-    .a(srca[31]),
-    .b(srcb[31]),
-    .cin(c[31]),
-    .cout(cout),
-    .result(result[31])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[3].adder  (
-    .a(srca[3]),
-    .b(srcb[3]),
-    .cin(c[3]),
-    .cout(c[4]),
-    .result(result[3])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[4].adder  (
-    .a(srca[4]),
-    .b(srcb[4]),
-    .cin(c[4]),
-    .cout(c[5]),
-    .result(result[4])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[5].adder  (
-    .a(srca[5]),
-    .b(srcb[5]),
-    .cin(c[5]),
-    .cout(c[6]),
-    .result(result[5])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[6].adder  (
-    .a(srca[6]),
-    .b(srcb[6]),
-    .cin(c[6]),
-    .cout(c[7]),
-    .result(result[6])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[7].adder  (
-    .a(srca[7]),
-    .b(srcb[7]),
-    .cin(c[7]),
-    .cout(c[8]),
-    .result(result[7])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[8].adder  (
-    .a(srca[8]),
-    .b(srcb[8]),
-    .cin(c[8]),
-    .cout(c[9]),
-    .result(result[8])
-  );
-  (* module_not_derived = 32'd1 *)
-  (* src = "convert_to_v/rca.v:26.15-32.5" *)
-  full_adder \full_adders[9].adder  (
-    .a(srca[9]),
-    .b(srcb[9]),
-    .cin(c[9]),
-    .cout(c[10]),
-    .result(result[9])
-  );
-  assign { c[32], c[0] } = { cout, cin };
-endmodule
-
-(* src = "convert_to_v/full_adder.v:1.1-15.10" *)
-module full_adder(a, b, cin, result, cout);
-  (* src = "convert_to_v/full_adder.v:8.13-8.14" *)
-  input a;
-  wire a;
-  (* src = "convert_to_v/full_adder.v:9.13-9.14" *)
-  input b;
-  wire b;
-  (* src = "convert_to_v/full_adder.v:10.13-10.16" *)
-  input cin;
-  wire cin;
-  (* src = "convert_to_v/full_adder.v:11.14-11.20" *)
-  output result;
-  wire result;
-  (* src = "convert_to_v/full_adder.v:12.14-12.18" *)
-  output cout;
-  wire cout;
-  sky130_fd_sc_hd__maj3_1 _0_ (
-    .A(cin),
-    .B(a),
-    .C(b),
-    .X(cout)
-  );
-  sky130_fd_sc_hd__xor3_1 _1_ (
-    .A(cin),
-    .B(a),
-    .C(b),
-    .X(result)
-  );
+  assign result = { \full_adders[31].adder.result , \full_adders[30].adder.result , \full_adders[29].adder.result , \full_adders[28].adder.result , \full_adders[27].adder.result , \full_adders[26].adder.result , \full_adders[25].adder.result , \full_adders[24].adder.result , \full_adders[23].adder.result , \full_adders[22].adder.result , \full_adders[21].adder.result , \full_adders[20].adder.result , \full_adders[19].adder.result , \full_adders[18].adder.result , \full_adders[17].adder.result , \full_adders[16].adder.result , \full_adders[15].adder.result , \full_adders[14].adder.result , \full_adders[13].adder.result , \full_adders[12].adder.result , \full_adders[11].adder.result , \full_adders[10].adder.result , \full_adders[9].adder.result , \full_adders[8].adder.result , \full_adders[7].adder.result , \full_adders[6].adder.result , \full_adders[5].adder.result , \full_adders[4].adder.result , \full_adders[3].adder.result , \full_adders[2].adder.result , \full_adders[1].adder.result , \full_adders[0].adder.result  };
 endmodule

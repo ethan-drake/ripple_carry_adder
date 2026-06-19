@@ -1,0 +1,17 @@
+11. Executing LTP pass (find longest path).
+
+Longest topological path in adder (length=13):
+    0: \cin
+    1: $abc$220$new_n39 (via $abc$220$auto$blifparse.cc:397:parse_blif$230)
+    2: $abc$220$new_n42 (via $abc$220$auto$blifparse.cc:397:parse_blif$233)
+    3: $abc$220$new_n46 (via $abc$220$auto$blifparse.cc:397:parse_blif$237)
+    4: $abc$220$new_n48 (via $abc$220$auto$blifparse.cc:397:parse_blif$239)
+    5: $abc$220$new_n50 (via $abc$220$auto$blifparse.cc:397:parse_blif$241)
+    6: $abc$220$new_n51 (via $abc$220$auto$blifparse.cc:397:parse_blif$242)
+    7: $abc$220$new_n53 (via $abc$220$auto$blifparse.cc:397:parse_blif$244)
+    8: $abc$220$new_n55 (via $abc$220$auto$blifparse.cc:397:parse_blif$246)
+    9: $abc$220$new_n56 (via $abc$220$auto$blifparse.cc:397:parse_blif$247)
+   10: $abc$220$new_n70 (via $abc$220$auto$blifparse.cc:397:parse_blif$261)
+   11: \full_adders[5].adder.result (via $abc$220$auto$blifparse.cc:397:parse_blif$262)
+   12: $abc$220$new_n82 (via $abc$220$auto$blifparse.cc:397:parse_blif$273)
+   13: \zero_f (via $abc$220$auto$blifparse.cc:397:parse_blif$274)

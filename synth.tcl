@@ -15,7 +15,7 @@ foreach w $widths {
     design -reset
 
     # 2. Read the physics dictionary (WITH THE -lib FLAG!) and Verilog
-    read_liberty -lib ./lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+    read_liberty -lib ./lib/45nm_stdcells.lib
     read_verilog convert_to_v/full_adder.v convert_to_v/rca.v
 
     # 3. Check hierarchy
@@ -24,18 +24,27 @@ foreach w $widths {
     # 4. Override the SystemVerilog parameter
     chparam -set WIDTH $w adder
 
-    # 5. Run generic synthesis
-    synth -top adder
+    # 1. Aggressive Generic Synthesis (Flattening the hierarchy)
+    synth -top adder -flatten
 
-    # 6. Map to Google Sky130 standard cells
-    abc -liberty ./lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+    # 2. Pre-mapping cleanup
+    opt -full -purge
 
-    # 7. Clean up unused wires
-    opt
+    # 3. Technology Mapping 
+    abc -liberty ./lib/45nm_stdcells.lib
+
+    # 4. Final Aggressive Cleanup
+    opt -full -purge
     clean
 
+    # --- ADD THE COMMANDS HERE ---
+    # Extract area and topological logic levels, appending the width to the filename
+    tee -o ./synth/area_report_${w}bit.txt stat -liberty ./lib/45nm_stdcells.lib
+    tee -o ./synth/path_report_${w}bit.txt ltp
+    # -----------------------------
+
     # 8. Write the final netlist using the loop variable
-    write_verilog ./synth/synth_netlist_sky130_${w}bit.v
-    
+    write_verilog -noattr -noexpr ./synth/synth_netlist_nangate45_${w}bit.v  
+
     puts "Finished synthesis for $w bits!"
 }
